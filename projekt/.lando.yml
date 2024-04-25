@@ -1,0 +1,12 @@
+name: modul-295-projekt
+recipe: laravel
+config:
+  webroot: public
+  php: 8.2
+services:
+  appserver:
+    run:
+      - cp -n .env .env
+      - composer install
+  database:
+    portforward: 3306

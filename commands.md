@@ -9,7 +9,9 @@
 **Laravel Telescope hinzufügen**
 
 composer require laravel/telescope
+
 php artisan telescope:install
+
 php artisan migrate
 
 **Neue Migration erstellen**
@@ -43,6 +45,7 @@ php artisan db:seed
 **DB neu migrieren und Seeder anschliessend ausführen**
 
 Php artisan migrate:refresh —seed
+
 php artisan migrate:fresh --seed
 
 **Alle Tests ausführen**
@@ -52,6 +55,7 @@ php artisan test
 **Bestimmte Tests ausführen**
 
 php artisan test --filter=C1Test
+
 php artisan test --group=example
 
 **Api.php erstellen**
